@@ -1,1 +1,1 @@
-https://cccarmean-tech.github.io/REPOSITORY/
+https://cccarmean-tech.github.io/clank-corner/
