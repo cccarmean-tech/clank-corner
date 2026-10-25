@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clank Corner</title>
+<meta name="description" content="A cozy fan site for Clank, a handmade magnetic robot.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A4%96%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#top">🤖 Clank Corner</a>
+  <nav aria-label="Main">
+    <a href="#story">Clank’s Story</a>
+    <a href="#builder">Clank Builder</a>
+    <a href="#accessories">Accessories</a>
+    <a href="#house">His House</a>
+    <a href="#sandbox">🎮 Sandbox</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="hero-text">
+    <h1>Welcome to Clank Corner!</h1>
+    <p class="sub">A cozy little corner of the internet for Clank, a handmade magnetic robot.</p>
+    <div class="btn-row">
+      <a class="btn primary" href="#builder">Build your own Clank</a>
+      <a class="btn" href="#story">Read his story</a>
+    </div>
+  </div>
+  <div class="hero-art" id="heroArt" role="img" aria-label="Illustration of Clank, a magnetic-piece robot"></div>
+</section>
+
+<section class="card wide special">
+  <h2>Why Clank is special</h2>
+  <p>Clank wasn’t made in a factory. He was built by hand, piece by magnetic piece, with care and creativity. Every click of a magnet was a choice, and every accessory he wears is handmade too. That’s what makes him one of a kind.</p>
+</section>
+
+<section id="story">
+  <h2>Clank’s Story</h2>
+  <p class="lead">Clank has grown and changed over time, and every version is part of who he is. Here are his three builds.</p>
+  <div class="grid3">
+    <article class="card"><div class="badge">Build 1</div><h3>The X Pieces</h3><div class="mini" id="b1"></div><p>It all began with a collection of X-shaped magnetic pieces. They weren’t a robot yet, but they were the very first beginning.</p></article>
+    <article class="card"><div class="badge">Build 2</div><h3>The Cube</h3><div class="mini" id="b2"></div><p>Next came a cube-shaped robot: a sturdy little block with a personality all its own.</p></article>
+    <article class="card"><div class="badge">Build 3</div><h3>Clank</h3><div class="mini" id="b3"></div><p>Then came Clank, his current form. He carries a bit of every build before him.</p></article>
+  </div>
+</section>
+
+<section id="builder">
+  <h2>Clank Builder</h2>
+  <p class="lead">Pick parts and accessories. The preview changes right away.</p>
+  <div class="builder">
+    <div class="preview-col">
+      <div class="preview" id="preview" role="img" aria-label="Your custom Clank"></div>
+      <div class="btn-row center">
+        <button type="button" class="btn primary" id="randomBtn">🎲 Randomize Clank</button>
+        <button type="button" class="btn" id="resetBtn">↺ Reset design</button>
+        <button type="button" class="btn primary" id="saveBtn">⬇ Save as PNG</button>
+      </div>
+      <p class="status" id="status" role="status" aria-live="polite"></p>
+      <div class="result" id="result" hidden>
+        <img id="resultImg" alt="Your finished Clank design">
+        <p>On a phone? <strong>Press and hold the picture</strong> and choose “Save to Photos” (or “Add to Photos”).</p>
+        <div class="btn-row center">
+          <a class="btn" id="dlLink" download="my-clank.png" href="#">Download PNG</a>
+          <button type="button" class="btn" id="shareBtn" hidden>Share / Save</button>
+        </div>
+      </div>
+    </div>
+    <div class="options" id="options"></div>
+  </div>
+</section>
+
+<section id="accessories">
+  <h2>Clank’s Accessories</h2>
+  <p class="lead">Clank’s accessories are handmade, and they’re part of his personality. These drawings are stand-ins you can swap for real photos later.</p>
+  <div class="grid4">
+    <article class="card"><figure class="photo"><svg viewBox="0 0 120 140" aria-hidden="true"><rect x="38" y="8" width="44" height="90" rx="10" fill="#fff"/><g fill="#c9a8ee"><rect x="38" y="20" width="44" height="12"/><rect x="38" y="44" width="44" height="12"/><rect x="38" y="68" width="44" height="12"/></g><path d="M38 90 H82 V104 Q82 112 70 112 H20 Q8 112 8 100 Q8 92 20 92 H38Z" fill="#fff"/><path d="M38 96 H82" stroke="#c9a8ee" stroke-width="10"/><path d="M12 106 H50" stroke="#9fd3f5" stroke-width="5" stroke-dasharray="3 4"/></svg></figure><h3>Crochet knee sock</h3><p>A long, stripy sock stitched by hand for Clank’s leg.</p></article>
+    <article class="card"><figure class="photo"><svg viewBox="0 0 120 140" aria-hidden="true"><path d="M30 30 H70 V70 Q100 74 104 96 Q104 110 90 110 H34 Q24 110 24 98Z" fill="#fff"/><rect x="30" y="30" width="40" height="12" fill="#9fd3f5"/><rect x="26" y="88" width="76" height="9" fill="#f5b5cc" opacity=".85"/><path d="M32 52 H68" stroke="#c9a8ee" stroke-width="4" stroke-dasharray="3 4"/></svg></figure><h3>Crochet foot sock</h3><p>A snug little sock just for Clank’s foot.</p></article>
+    <article class="card"><figure class="photo"><svg viewBox="0 0 120 140" aria-hidden="true"><g fill="#f5b5cc" stroke="#fff" stroke-width="2"><circle cx="24" cy="40" r="8"/><circle cx="32" cy="62" r="8"/><circle cx="46" cy="80" r="8"/><circle cx="60" cy="86" r="9" fill="#c9a8ee"/><circle cx="74" cy="80" r="8"/><circle cx="88" cy="62" r="8"/><circle cx="96" cy="40" r="8"/></g></svg></figure><h3>Crochet necklace</h3><p>A bead-like crochet necklace worn with pride.</p></article>
+    <article class="card"><figure class="photo"><svg viewBox="0 0 120 140" aria-hidden="true"><ellipse cx="60" cy="72" rx="38" ry="34" fill="none" stroke="#9fd3f5" stroke-width="14"/><ellipse cx="60" cy="72" rx="38" ry="34" fill="none" stroke="#fff" stroke-width="14" stroke-dasharray="4 9"/><circle cx="60" cy="38" r="8" fill="#c9a8ee"/></svg></figure><h3>Crochet bracelet</h3><p>A soft crochet band for Clank’s arm.</p></article>
+  </div>
+</section>
+
+<section id="house">
+  <h2>Clank’s Cardboard House</h2>
+  <p class="lead">Clank lives in a handmade cardboard home, a tiny house built with care. It has a door that opens and a roof that lifts off, so you can peek inside.</p>
+  <div class="house-wrap">
+    <svg id="houseSvg" viewBox="0 0 400 320" role="img" aria-label="Clank’s cardboard house">
+      <defs><pattern id="cb" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#d9b07a"/><path d="M0 4 H8" stroke="#c99d63" stroke-width="2"/></pattern></defs>
+      <rect x="0" y="286" width="400" height="34" fill="#cfe9d4"/>
+      <rect x="70" y="120" width="260" height="170" rx="6" fill="url(#cb)" stroke="#b58a52" stroke-width="3"/>
+      <rect x="70" y="120" width="260" height="22" fill="#a97d47" opacity=".55"/>
+      <rect x="95" y="165" width="50" height="50" rx="6" fill="#bfe3f7" stroke="#b58a52" stroke-width="3"/>
+      <path d="M120 165V215M95 190H145" stroke="#b58a52" stroke-width="3"/>
+      <rect x="205" y="170" width="86" height="120" rx="4" fill="#5b4a6e"/>
+      <g transform="translate(248 250)"><rect x="-17" y="-26" width="34" height="28" rx="8" fill="#8ec9f0"/><circle cx="-6" cy="-14" r="3.5" fill="#fff"/><circle cx="6" cy="-14" r="3.5" fill="#fff"/><rect x="-14" y="2" width="28" height="30" rx="6" fill="#8ec9f0"/></g>
+      <g id="door" style="transform-origin:205px 230px;transition:transform .5s ease"><rect x="205" y="170" width="86" height="120" rx="4" fill="#c4965c" stroke="#9c7140" stroke-width="3"/><rect x="217" y="184" width="62" height="40" rx="4" fill="none" stroke="#9c7140" stroke-width="2"/><circle cx="278" cy="238" r="5" fill="#f5e7a8" stroke="#9c7140"/></g>
+      <g id="roof" style="transition:transform .6s ease"><path d="M50 124 L200 30 L350 124 Z" fill="#c9a8ee" stroke="#a785cc" stroke-width="3" stroke-linejoin="round"/><path d="M200 30 L200 124" stroke="#a785cc" stroke-width="2" opacity=".5"/><path d="M110 92 H290" stroke="#fff" stroke-width="3" stroke-dasharray="2 8" stroke-linecap="round"/></g>
+    </svg>
+    <div class="btn-row center">
+      <button type="button" class="btn primary" id="doorBtn" aria-pressed="false">🚪 Open the door</button>
+      <button type="button" class="btn" id="roofBtn" aria-pressed="false">🏠 Lift the roof</button>
+    </div>
+  </div>
+</section>
+</main>
+
+<section id="sandbox">
+  <h2>Clank Sandbox</h2>
+  <p class="lead">Drag Clank around, spawn cardboard pieces, and build anything you like.</p>
+  <div id="sandboxRoot"></div>
+</section>
+<footer><p>Made with care for Clank 🤖💙 &nbsp; A fan site, built by hand (like him).</p></footer>
+<script src="script.js"></script>
+<script src="sandbox.js"></script>
+</body>
+</html>
